@@ -336,6 +336,22 @@
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 92' preserveAspectRatio='none'><path d='M143 9 C 100 1, 46 6, 24 27 C 5 46, 24 74, 70 83 C 118 91, 172 79, 185 57 C 194 41, 180 23, 152 14' fill='none' stroke='%23dda600' stroke-width='4' stroke-linecap='round'/></svg>");
   }
 
+  /* 손으로 그린 별표 + 밑줄 강조 */
+  .uline--star{position:relative}
+  .uline--star::before{
+    content:"";position:absolute;
+    left:-.30em;top:-.36em;width:.72em;height:.72em;
+    background-repeat:no-repeat;background-size:contain;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M 49.8 6.3 L 62.2 35.7 L 91.9 36.8 L 65.3 55.5 L 76.4 86.9 L 48.2 66.6 L 22.3 87.0 L 34.2 53.4 L 10.3 38.4 L 40.4 36.4 L 48.6 7.3 L 53.5 15.1' fill='none' stroke='%23dda600' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  }
+  .uline{
+    text-decoration:underline;
+    text-decoration-color:var(--gold);
+    text-decoration-thickness:.07em;
+    text-underline-offset:.18em;
+    text-decoration-skip-ink:none;
+  }
+
   /* 물결 밑줄 */
   .wave{
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='8' viewBox='0 0 24 8'><path d='M0 5 Q 3 1, 6 5 T 12 5 T 18 5 T 24 5' fill='none' stroke='%23dda600' stroke-width='2' stroke-linecap='round'/></svg>");
@@ -565,7 +581,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="wave">사회혁신가 지원사업</span><br>공개모집합니다</h2>
+    <h2 class="h-lead"><span class="uline uline--star">사회혁신가 지원사업</span><br>공개모집합니다</h2>
 
     <section class="news">
       <div class="news__grid">
