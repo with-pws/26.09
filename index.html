@@ -336,14 +336,21 @@
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 92' preserveAspectRatio='none'><path d='M143 9 C 100 1, 46 6, 24 27 C 5 46, 24 74, 70 83 C 118 91, 172 79, 185 57 C 194 41, 180 23, 152 14' fill='none' stroke='%23dda600' stroke-width='4' stroke-linecap='round'/></svg>");
   }
 
-  /* 손으로 그린 별표 + 밑줄 강조 */
-  .uline--star{position:relative}
-  .uline--star::before{
-    content:"";position:absolute;
-    left:-.30em;top:-.36em;width:.72em;height:.72em;
-    background-repeat:no-repeat;background-size:contain;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M 49.8 6.3 L 62.2 35.7 L 91.9 36.8 L 65.3 55.5 L 76.4 86.9 L 48.2 66.6 L 22.3 87.0 L 34.2 53.4 L 10.3 38.4 L 40.4 36.4 L 48.6 7.3 L 53.5 15.1' fill='none' stroke='%23dda600' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  /* 손으로 그린 따옴표 + 밑줄 강조 */
+  .q{
+    display:inline-block;vertical-align:top;
+    width:.44em;height:.44em;
+    background-repeat:no-repeat;background-size:contain;background-position:center;
   }
+  .q--o{margin-right:.02em;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M15 9 C 9 13, 6 20, 8 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/><path d='M31 8 C 25 13, 22 19, 24 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/></svg>");
+  }
+  /* 줄 첫머리에 올 때 글줄 왼쪽 맞춤 */
+  .q--flush{margin-left:-.46em}
+  .q--c{margin-left:.04em;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><g transform='rotate(180 20 20)'><path d='M15 9 C 9 13, 6 20, 8 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/><path d='M31 8 C 25 13, 22 19, 24 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/></g></svg>");
+  }
+
   .uline{
     text-decoration:underline;
     text-decoration-color:var(--gold);
@@ -591,7 +598,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="uline uline--star">사회혁신가 지원사업</span><br>공개모집합니다</h2>
+    <h2 class="h-lead"><span class="q q--o q--flush" aria-hidden="true"></span>사회혁신가<span class="q q--c" aria-hidden="true"></span> 지원사업<br>공개모집!</h2>
 
     <section class="news">
       <div class="news__grid">
@@ -609,7 +616,7 @@
             <div class="facts__row"><div class="facts__k">모집 기간</div><div class="facts__v"><span class="hl">2026년 10월 1일(목) ~ 10월 31일(토)</span></div></div>
             <div class="facts__row"><div class="facts__k">지원 인원</div><div class="facts__v">최대 5명</div></div>
             <div class="facts__row"><div class="facts__k">지원 기간</div><div class="facts__v">12개월</div></div>
-            <div class="facts__row"><div class="facts__k">지원 금액</div><div class="facts__v">월 50만 원 ~ 83만 원<small>선발 인원 5명 ~ 3명 기준</small></div></div>
+            <div class="facts__row"><div class="facts__k">지원 금액</div><div class="facts__v">월 50만 원 · 총 600만 원</div></div>
             <div class="facts__row"><div class="facts__k">신청 방법</div><div class="facts__v">본인 신청과 동료 추천 모두 가능</div></div>
             <div class="facts__row"><div class="facts__k">신청 링크</div><div class="facts__v ph ph--inline">추후 안내</div></div>
           </div>
@@ -635,7 +642,7 @@
       <img src="photo.jpg" alt="바자회에 출품될 백자 항아리와 그릇들">
     </figure>
 
-    <h2 class="h-lead">회원의날<br>바자회 개최!</h2>
+    <h2 class="h-lead">회원의날<br>바자회 개최</h2>
 
     <div class="split">
       <div>
