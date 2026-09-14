@@ -361,6 +361,9 @@
     padding-bottom:0;
   }
 
+  /* 줄 첫머리에 올 때 글줄 왼쪽을 맞춘다 */
+  .circle--flush{margin-left:-.38em;margin-right:-.2em}
+
   .ul{
     text-decoration:underline;text-decoration-color:var(--gold);
     text-decoration-thickness:2px;text-underline-offset:4px;
@@ -429,6 +432,10 @@
   }
   .benefit__box p{margin:0;font-size:.92rem;line-height:1.85;color:var(--ink)}
   .benefit__box .rules{margin-top:10px}
+  .benefit__note{
+    font-family:var(--sans);font-size:.76rem;line-height:1.75;
+    color:var(--ink-faint);margin:12px 0 0;
+  }
   .benefit__box .rules li{color:var(--ink-soft)}
 
   /* ---------- 출처 링크 줄 ---------- */
@@ -458,6 +465,7 @@
     .benefit__box{padding:18px 18px}
     .benefit__title{font-size:1.05rem}
     .benefit__box p{font-size:.88rem}
+    .benefit__note{font-size:.72rem}
     .srcline{font-size:.76rem}
     .ph{font-size:.78rem}
 
@@ -532,7 +540,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead">박원순혁신재단<br><span class="circle">공익법인</span> 지정</h2>
+    <h2 class="h-lead">박원순혁신재단<br><span class="circle circle--flush">공익법인</span> 지정</h2>
 
     <section class="news">
       <div class="news__grid">
@@ -556,6 +564,7 @@
           <li>전자기부금영수증 발급</li>
           <li>연말정산 시 세액공제 <strong>15%</strong> (1천만 원 초과분 <strong>30%</strong>)</li>
         </ul>
+        <p class="benefit__note">※ 사업소득만 있는 분은 공제 대상에서 제외됩니다. 연말정산 대상 사업소득자는 포함됩니다.</p>
       </div>
       <div class="benefit__box">
         <h3 class="benefit__title">기업·법인 후원자</h3>
@@ -658,7 +667,7 @@
         <p class="footer__org">(사)박원순혁신재단</p>
         <p>서울 종로구 새문안로 69 구세군회관 504호</p>
         <p><a href="https://www.parkwonsoon.org" target="_blank" rel="noopener">www.parkwonsoon.org</a> / <a href="sms:+821073970109">010-7397-0109</a> / <a href="mailto:sojang@parkwonsoon.org">sojang@parkwonsoon.org</a></p>
-        <p>후원계좌: <button type="button" class="copybtn" data-copy="203-910058-08904">하나은행 203-910058-08904</button> (사단법인 박원순혁신재단)</p>
+        <p>후원계좌: 하나은행 <button type="button" class="copybtn" data-copy="203-910058-08904">203-910058-08904</button> (사단법인 박원순혁신재단)</p>
       </div>
     </section>
 
