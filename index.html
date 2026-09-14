@@ -336,6 +336,15 @@
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 92' preserveAspectRatio='none'><path d='M143 9 C 100 1, 46 6, 24 27 C 5 46, 24 74, 70 83 C 118 91, 172 79, 185 57 C 194 41, 180 23, 152 14' fill='none' stroke='%23dda600' stroke-width='4' stroke-linecap='round'/></svg>");
   }
 
+  /* 물결 밑줄 */
+  .wave{
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='8' viewBox='0 0 24 8'><path d='M0 5 Q 3 1, 6 5 T 12 5 T 18 5 T 24 5' fill='none' stroke='%23dda600' stroke-width='2' stroke-linecap='round'/></svg>");
+    background-repeat:repeat-x;
+    background-position:0 100%;
+    background-size:24px 8px;
+    padding-bottom:5px;
+  }
+
   .ul{
     text-decoration:underline;text-decoration-color:var(--gold);
     text-decoration-thickness:2px;text-underline-offset:4px;
@@ -512,7 +521,7 @@
     <section class="news">
       <div class="news__grid">
         <div class="prose">
-          <p>2026년 9월 30일, 박원순혁신재단이 공익법인으로 지정되었습니다. 이제 공식적으로 모금 활동을 할 수 있고, 후원해 주신 분께 기부금영수증을 발급해 드릴 수 있습니다.</p>
+          <p>2026년 9월 30일, 박원순혁신재단이 공익법인으로 지정되었습니다. 이제 공식적 모금 활동이 가능하고, 후원해 주신 분들께 기부금영수증을 발급해 드릴 수 있습니다.</p>
         </div>
         <div>
           <div class="facts">
@@ -556,18 +565,27 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead">사회혁신가를<br>공개모집합니다</h2>
+    <h2 class="h-lead"><span class="wave">사회혁신가 지원사업</span><br>공개모집합니다</h2>
 
     <section class="news">
       <div class="news__grid">
         <div class="prose">
-          <p class="ph ph--text">모집 취지와 지원 내용, 선발 방식 등 본문이 들어갈 자리입니다.</p>
+          <p>현장에서 사람과 사람을 잇고, 작은 현장을 바꾸며 후배와 동료를 늘려가는 활동가를 찾습니다. 관계로 문제를 해결하는 사람, 곧 <span class="hl">소셜디자이너</span>입니다.</p>
+          <ul class="rules">
+            <li>40~50대 활동가</li>
+            <li>영리·비영리를 가리지 않고, 공공에 유익한 <span class="ul">임팩트</span>를 지향한다면 누구나</li>
+            <li>활동 계획서를 바탕으로 선정합니다</li>
+            <li>지원금 사용 내역의 증빙은 요구하지 않습니다</li>
+          </ul>
         </div>
         <div>
           <div class="facts">
             <div class="facts__row"><div class="facts__k">모집 기간</div><div class="facts__v"><span class="hl">2026년 10월 1일(목) ~ 10월 31일(토)</span></div></div>
-            <div class="facts__row"><div class="facts__k">모집 대상</div><div class="facts__v ph ph--inline">미정</div></div>
-            <div class="facts__row"><div class="facts__k">신청 방법</div><div class="facts__v ph ph--inline">미정</div></div>
+            <div class="facts__row"><div class="facts__k">지원 인원</div><div class="facts__v">최대 5명</div></div>
+            <div class="facts__row"><div class="facts__k">지원 기간</div><div class="facts__v">12개월</div></div>
+            <div class="facts__row"><div class="facts__k">지원 금액</div><div class="facts__v">월 50만 원 ~ 83만 원<small>선발 인원 5명 ~ 3명 기준</small></div></div>
+            <div class="facts__row"><div class="facts__k">신청 방법</div><div class="facts__v">본인 신청과 동료 추천 모두 가능<small>자천 · 타천 병행</small></div></div>
+            <div class="facts__row"><div class="facts__k">신청 링크</div><div class="facts__v ph ph--inline">추후 안내</div></div>
           </div>
         </div>
       </div>
