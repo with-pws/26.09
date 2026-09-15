@@ -346,6 +346,28 @@
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 92' preserveAspectRatio='none'><path d='M143 9 C 100 1, 46 6, 24 27 C 5 46, 24 74, 70 83 C 118 91, 172 79, 185 57 C 194 41, 180 23, 152 14' fill='none' stroke='%23dda600' stroke-width='4' stroke-linecap='round'/></svg>");
   }
 
+  /* 손그림 별표 + 사선 밑줄 강조 */
+  .mark{
+    position:relative;display:inline-block;
+    background-repeat:no-repeat;
+    background-position:0 100%;
+    background-size:100% .32em;
+    padding-bottom:.18em;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 22' preserveAspectRatio='none'><path d='M3 18 C 60 15, 140 10, 197 4' fill='none' stroke='%23dda600' stroke-width='5' stroke-linecap='round'/><path d='M14 21 C 70 18, 150 13, 193 9' fill='none' stroke='%23dda600' stroke-width='3' stroke-linecap='round' opacity='.75'/></svg>");
+  }
+  .mark::after{
+    content:"";position:absolute;
+    left:.30em;top:-.56em;width:.34em;height:.34em;
+    background-repeat:no-repeat;background-size:contain;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -8 112 112'><g transform='rotate(14 50 50)'><path d='M 47.0 -1.6 Q 53.0 0.9 49.7 6.4 Q 65.0 45.6 75.9 86.2 Q 39.6 66.3 9.1 38.5 Q 52.0 41.0 94.8 36.2 Q 57.1 59.0 21.9 85.7 Q 30.6 44.2 49.7 6.4 L 56.5 27.2' fill='none' stroke='%23dda600' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/></g></svg>");
+  }
+  .mark::before{
+    content:"";position:absolute;
+    left:-.32em;top:-.40em;width:.76em;height:.76em;
+    background-repeat:no-repeat;background-size:contain;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -8 112 112'><g transform='rotate(-10 50 50)'><path d='M 46.0 -4.6 Q 52.3 -2.1 48.8 3.6 Q 67.1 42.5 76.1 84.7 Q 40.0 61.0 4.9 35.9 Q 49.0 38.6 92.9 33.4 Q 59.6 63.2 21.0 85.6 Q 31.8 43.5 48.8 3.6 L 55.9 24.6' fill='none' stroke='%23dda600' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/></g></svg>");
+  }
+
   /* 손으로 그린 따옴표 + 밑줄 강조 */
   .q{
     display:inline-block;vertical-align:top;
@@ -609,7 +631,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="q q--o q--flush" aria-hidden="true"></span>사회혁신가<span class="q q--c" aria-hidden="true"></span> 지원사업<br>공개모집!</h2>
+    <h2 class="h-lead"><span class="mark">사회혁신가 지원사업</span><br>공개모집!</h2>
 
     <section class="news">
       <div class="news__grid">
@@ -617,7 +639,6 @@
           <p>현장에서 사람과 사람을 잇고, 작은 현장을 바꾸며 후배와 동료를 늘려가는 활동가를 찾습니다. 관계로 문제를 해결하는 사람, 곧 <span class="hl">소셜디자이너</span>입니다.</p>
           <ul class="rules">
             <li>40~50대 활동가</li>
-            <li>영리·비영리를 가리지 않고, 공공에 유익한 <span class="ul">임팩트</span>를 지향한다면 누구나</li>
             <li>활동 계획서를 바탕으로 선정합니다</li>
             <li>지원금 사용 내역의 증빙은 요구하지 않습니다</li>
           </ul>
