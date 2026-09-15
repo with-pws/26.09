@@ -165,7 +165,7 @@
   }
   .cover.is-paused .cover__play{display:flex}
   .cover__sound{
-    position:absolute;right:12px;bottom:12px;
+    position:absolute;left:12px;top:12px;
     font-family:var(--sans);font-size:.72rem;font-weight:500;
     background:rgba(20,18,14,.55);color:#fff;border:0;border-radius:999px;
     padding:7px 14px;cursor:pointer;backdrop-filter:blur(2px);
@@ -818,12 +818,14 @@
   var soundBtn = document.getElementById('coverSound');
   if (soundBtn){
     soundBtn.addEventListener('click', function(e){
-      e.stopPropagation();
+      e.stopPropagation(); e.preventDefault();
       wantSound = video.muted;          /* 지금 음소거면 소리를 켠다 */
       video.muted = !wantSound;
+      try { video.volume = 1; } catch(err){}
       soundBtn.textContent = wantSound ? '소리 끄기' : '소리 켜기';
       soundBtn.setAttribute('aria-label', soundBtn.textContent);
-      if (video.paused) tryPlay();
+      /* 이미 끝났거나 멈춰 있으면 처음부터 다시 재생 */
+      if (wantSound && (video.paused || video.ended)) replay();
     });
   }
   video.addEventListener('error', function(){ paused(true); });
