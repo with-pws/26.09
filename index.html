@@ -223,9 +223,15 @@
   .toc__num{font-family:var(--sans);font-weight:600;font-size:.95rem;color:var(--yellow)}
   .toc__txt{font-size:1rem}
 
-  /* ---------- 사진 ---------- */
+  /* ---------- 사진 (이 부분이 수정되었습니다) ---------- */
   .photo{margin:0 0 30px}
-  .photo img{display:block;width:100%;height:auto}
+  .photo img{
+    display:block;
+    width:100%;
+    aspect-ratio:3/2; /* 사진의 가로세로 3:2 비율 유지 (모바일 대응) */
+    object-fit:cover; /* 검은 여백을 제거하고 사진으로 꽉 채움 */
+    object-position:center;
+  }
   .photo figcaption{
     font-family:var(--sans);font-size:.72rem;color:var(--ink-faint);
     margin-top:8px;line-height:1.7;
