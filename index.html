@@ -254,6 +254,9 @@
   }
   .facts__v{font-size:.98rem;line-height:1.75}
   .facts__v small{display:block;font-size:.84rem;color:var(--ink-soft);margin-top:2px}
+  /* 신청·문의 이메일: 누르면 메일 앱으로 */
+  .facts__mail{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+  .facts__mail:hover{border-bottom-color:var(--ink)}
 
   /* ---------- 회원소식 블록 ---------- */
   .news{padding:26px 0;border-top:1px solid var(--rule)}
@@ -435,9 +438,9 @@
   @media (min-width:761px){
     .page:last-of-type .prose p{text-align:justify;text-align-last:left}
 
-    /* PC에는 문자·메일 앱이 없는 경우가 많으므로 홈페이지 링크만 남긴다 */
-    .footer a[href^="sms:"], .footer a[href^="mailto:"],
-    .callout__contact a{
+    /* PC에는 문자 앱이 없는 경우가 많으므로 문자 링크만 막는다 (이메일은 PC·모바일 모두 작동) */
+    .footer a[href^="sms:"],
+    .callout__contact a[href^="sms:"]{
       pointer-events:none;cursor:default;
       color:inherit;border-bottom:0;
     }
@@ -660,7 +663,7 @@
         <div class="facts__row"><div class="facts__k">신청 방법</div><div class="facts__v">지정 양식을 이메일로 제출<small>지원서 · 활동계획서 · 개인정보 활용 동의서 (지정 양식은 링크에서 다운로드)</small></div></div>
         <div class="facts__row"><div class="facts__k">심사</div><div class="facts__v">2026년 10월 26일(월) ~ 11월 8일(일)<small>서류 심사 후 인터뷰 (필요 시 현장 심사)</small></div></div>
         <div class="facts__row"><div class="facts__k">선정 발표</div><div class="facts__v">2026년 11월 9일(월)<small>홈페이지 공고 및 개별 연락</small></div></div>
-        <div class="facts__row"><div class="facts__k">신청·문의</div><div class="facts__v">help@parkwonsoon.org<small>02-733-1226 (월~금, 10시~4시)</small><small>010-7397-0109 (문자메시지 전용)</small></div></div>
+        <div class="facts__row"><div class="facts__k">신청·문의</div><div class="facts__v"><a class="facts__mail" href="mailto:help@parkwonsoon.org">help@parkwonsoon.org</a><small>02-733-1226 (월~금, 10시~4시)</small><small>010-7397-0109 (문자메시지 전용)</small></div></div>
       </div>
       <!-- 사업 상세 안내 링크 자리: 주소가 나오면 아래 span을
            <a href="주소" target="_blank" rel="noopener">재단 홈페이지 공고</a> 로 교체 -->
