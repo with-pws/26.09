@@ -233,6 +233,7 @@
     object-fit:cover; /* 검은 여백을 제거하고 사진으로 꽉 채움 */
     object-position:center;
   }
+  .photo--43 img{aspect-ratio:4/3}   /* 작은마켓 사진: 아래쪽을 더 보이게 */
   .photo figcaption{
     font-family:var(--sans);font-size:.72rem;color:var(--ink-faint);
     margin-top:8px;line-height:1.7;
@@ -687,14 +688,14 @@
 
   <div class="page__body">
     <!-- 작은마켓 사진 (2025 회원의날) -->
-    <figure class="photo rise">
+    <figure class="photo photo--43 rise">
       <img src="bazaar.jpg" alt="지난 회원의날 작은마켓에서 회원들이 후원 물품을 둘러보는 모습">
     </figure>
 
     <h2 class="h-lead">회원의날 바자회<br>&lt;작은마켓&gt; 개최</h2>
 
     <section class="prose">
-      <p><strong>후원과 득템을 동시에!</strong> 가지고 있기 아까운 좋은 물건을 나눠주세요. 회원의날 현장에서 판매하고, <span class="hl">수익금은 재단의 후원금</span>이 됩니다.</p>
+      <p><strong>함께 모아 함께 나누자!</strong> 가지고 있기 아까운 좋은 물건을 나눠주세요. 회원의날 현장에서 판매하고, 수익금은 재단의 후원금이 됩니다.</p>
     </section>
 
     <div class="split" style="margin-top:26px">
