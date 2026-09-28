@@ -257,6 +257,8 @@
   }
   .facts__v{font-size:.98rem;line-height:1.75}
   .facts__v small{display:block;font-size:.84rem;color:var(--ink-soft);margin-top:2px}
+  /* 항목 값과 같은 글꼴·크기의 보조 안내 줄 */
+  .facts__note{display:block;margin-top:6px}
   /* 신청·문의 이메일: 누르면 메일 앱으로 */
   .facts__mail{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
   .facts__mail:hover{border-bottom-color:var(--ink)}
@@ -290,6 +292,12 @@
     border-bottom:1px solid var(--gold);
   }
   .callout__contact a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  /* 물품 후원 방법 아래 문의 번호 */
+  .callout__note{
+    margin:16px 0 0;padding-top:12px;border-top:1px solid rgba(221,166,0,.28);
+    font-family:var(--sans);font-size:.86rem;color:var(--ink-soft);
+  }
+  .callout__note a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
   .rules{list-style:none;margin:14px 0 0;padding:0}
   .rules li{
     font-size:.92rem;color:var(--ink-soft);line-height:1.8;
@@ -726,7 +734,7 @@
     <div style="margin-top:26px">
       <div>
         <div class="facts facts--2col">
-          <div class="facts__row"><div class="facts__k">일시</div><div class="facts__v"><span class="hl">2026년 11월 14일(토) <br class="br-m">오후 3시 ~ 6시</span><small class="meal">식사시간 포</small></div></div>
+          <div class="facts__row"><div class="facts__k">일시</div><div class="facts__v"><span class="hl">2026년 11월 14일(토) <br class="br-m">오후 3시 ~ 6시</span><small class="meal">식사시간 포함</small><span class="facts__note">바자회 판매는 2시부터 진행합니다.</span></div></div>
           <div class="facts__row"><div class="facts__k">장소</div><div class="facts__v">푸르메재단 강당<small>서울시 종로구 자하문로 89, 4층</small></div></div>
         </div>
       </div>
@@ -741,6 +749,7 @@
             <span class="callout__contact">가져올 곳: 행사장(푸르메재단 강당)</span>
           </li>
         </ol>
+        <p class="callout__note">문의: <a href="sms:+821073970109">010-7397-0109</a> (문자)</p>
       </div>
     </div>
 
