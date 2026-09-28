@@ -443,6 +443,10 @@
   @media (min-width:761px){
     .page:last-of-type .prose p{text-align:justify;text-align-last:left}
 
+    /* PC: 제목을 한 줄로 (모바일은 두 줄 유지) */
+    .br-mo{display:none}
+    .circle--flush{margin-left:0;margin-right:0}
+
     /* PC: 곁글이 너무 작지 않도록 */
     .aside{font-size:.95rem;line-height:1.9}
     .split--even{grid-template-columns:1fr 1fr;gap:34px}
@@ -618,7 +622,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead">박원순혁신재단<br><span class="circle circle--flush">공익법인</span> 지정</h2>
+    <h2 class="h-lead">박원순혁신재단<br class="br-mo"> <span class="circle circle--flush">공익법인</span> 지정</h2>
 
     <section class="news">
       <div class="prose">
@@ -708,7 +712,7 @@
       <img src="bazaar.jpg" alt="지난 회원의날 작은마켓에서 회원들이 후원 물품을 둘러보는 모습">
     </figure>
 
-    <h2 class="h-lead">회원의날 바자회<br>&lt;작은마켓&gt; 개최</h2>
+    <h2 class="h-lead">회원의날 바자회<br class="br-mo"> <span style="white-space:nowrap">&lt;작은마켓&gt;</span> 개최</h2>
 
     <section class="prose">
       <p><strong>함께 모아 함께 나누자!</strong> 가지고 있기 아까운 좋은 물건을 나눠주세요. 회원의날 현장에서 판매하고, 수익금은 재단의 후원금이 됩니다.</p>
