@@ -208,6 +208,8 @@
   .aside{font-size:.86rem;line-height:1.95;color:var(--ink-soft)}
   .aside p{margin:0 0 1em}
   .aside p:last-child{margin-bottom:0}
+  /* 본문과 같은 크기·색으로 읽히는 곁글 */
+  .aside--strong{font-size:1rem;color:var(--ink)}
 
   /* ---------- 목차 ---------- */
   .toc{border-top:1px solid var(--rule);margin-top:34px;padding-top:24px}
@@ -449,6 +451,7 @@
 
     /* PC: 곁글이 너무 작지 않도록 */
     .aside{font-size:.95rem;line-height:1.9}
+    .aside--strong{font-size:1.04rem;line-height:1.9}
     .split--even{grid-template-columns:1fr 1fr;gap:34px}
 
     /* PC: 항목 표를 두 단으로 나눠 가로 공간을 채운다 */
@@ -712,7 +715,7 @@
     <h2 class="h-lead">회원의날 바자회<br class="br-mo"> <span style="white-space:nowrap">&lt;작은마켓&gt;</span> 개최</h2>
 
     <section class="prose">
-      <p><strong>함께 모아 함께 나누자!</strong> 가지고 있기 아까운 좋은 물건을 나눠주세요. 회원의날 현장에서 판매하고, 수익금은 재단의 후원금이 됩니다.</p>
+      <p><strong>올해 회원의날에도 ‘작은마켓’을 엽니다.</strong> 가지고 있기 아까운 물건을 기부해 주세요. 수익은 재단 후원금으로 사용됩니다.</p>
     </section>
 
     <div style="margin-top:26px">
@@ -725,11 +728,13 @@
       <div class="callout callout--wide">
         <h3 class="benefit__title">물품 후원 방법</h3>
         <ol class="lead-list">
-          <li><strong>택배로 보내기</strong> · 11월 5일(목)까지
-            <span class="callout__contact">서울 종로구 새문안로 69 구세군회관 504호<br>(사)박원순혁신재단 · 010-7397-0109</span>
+          <li><strong>택배로 보내기</strong>
+            <span class="callout__contact">보낼 곳: 서울 종로구 새문안로 69 구세군회관 504호<br>(사)박원순혁신재단 · 010-7397-0109</span>
+            <span class="callout__contact">마감: 11월 5일(목)까지</span>
           </li>
-          <li><strong>당일 직접 가져오기</strong> · <span style="white-space:nowrap">오후 2시까지</span>
-            <span class="callout__contact">문자(<a href="sms:+821073970109">010-7397-0109</a>)로 미리 알려주시면 좋습니다</span>
+          <li><strong>당일 직접 가져오기</strong>
+            <span class="callout__contact">가져올 곳: 행사장(푸르메재단 강당)<br>문자(<a href="sms:+821073970109">010-7397-0109</a>)로 미리 알려주세요</span>
+            <span class="callout__contact">마감: 당일 오후 2시까지</span>
           </li>
         </ol>
       </div>
@@ -738,13 +743,15 @@
     <!-- 특별 출품 -->
     <section class="news" style="margin-top:34px">
       <span class="eyebrow">특별 출품</span>
-      <h3 class="h-sub">임화공 선생님의 백자 작품</h3>
+      <h3 class="h-sub">임화공 특별전</h3>
       <div class="split split--even">
       <figure class="photo photo--43" style="margin:0">
         <img src="imhwagong.jpg" alt="화예 작품 앞에서 관람객과 이야기 나누는 임화공 선생님">
       </figure>
-      <div class="aside">
-        <p>임화공 선생님은 우리나라 화예 강사 제1호로, 1958년 첫 화예전을 연 이래 60여 년간 한국의 꽃 예술을 세계에 알려 오셨습니다. 2006년에는 민간 문화외교에 기여한 공로로 수교훈장 숭례장을 받으셨습니다. 이번 작은마켓에 선생님의 백자 작품을 내주셨습니다.</p>
+      <div class="aside aside--strong">
+        <p>임화공 선생님은 우리나라 화예 강사 제1호로, 1958년 첫 화예전을 연 이래 60여 년간 한국의 꽃 예술을 세계에 알려 오셨습니다. 2006년에는 민간 문화외교에 기여한 공로로 수교훈장 숭례장을 받으셨습니다.</p>
+        <p>회원의날을 맞아 임화공 선생님의 후손께서 작품을 여러 점 기증해 주셨습니다.</p>
+        <p>평소 만나기 어려운 귀한 작품을 구경하고, 직접 소장하실 수 있는 기회를 마련했으니 많은 관심 부탁드립니다.</p>
         <p class="srcline"><a href="https://www.whaon.co.kr/17" target="_blank" rel="noopener">임화공 선생님 소개 보기</a></p>
       </div>
       </div>
