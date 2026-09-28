@@ -233,6 +233,9 @@
     object-fit:cover; /* 검은 여백을 제거하고 사진으로 꽉 채움 */
     object-position:center;
   }
+  .photo--sm{               /* 본문 아래 들어가는 작은 사진 */
+    max-width:420px;margin:24px auto 0;
+  }
   .photo--43 img{aspect-ratio:4/3}   /* 작은마켓 사진: 아래쪽을 더 보이게 */
   .photo figcaption{
     font-family:var(--sans);font-size:.72rem;color:var(--ink-faint);
@@ -723,13 +726,18 @@
       <h3 class="h-sub">임화공 선생님의 백자 작품</h3>
       <div class="split">
       <figure class="photo" style="margin:0">
-        <img src="photo.jpg" alt="바자회에 출품될 백자 항아리와 그릇들">
+        <img src="imhwagong.jpg" alt="꽃꽂이 수업을 이끄는 임화공 선생님">
       </figure>
       <div class="aside">
         <p>임화공 선생님은 우리나라 화예 강사 제1호로, 1958년 첫 화예전을 연 이래 60여 년간 한국의 꽃 예술을 세계에 알려 오셨습니다. 2006년에는 민간 문화외교에 기여한 공로로 수교훈장 숭례장을 받으셨습니다. 이번 작은마켓에 선생님의 백자 작품을 내주셨습니다.</p>
         <p class="srcline"><a href="https://www.whaon.co.kr/17" target="_blank" rel="noopener">임화공 선생님 소개 보기</a></p>
       </div>
       </div>
+
+      <figure class="photo photo--sm">
+        <img src="photo.jpg" alt="바자회에 출품될 백자 항아리와 그릇들">
+        <figcaption>작은마켓에 출품되는 백자 작품</figcaption>
+      </figure>
     </section>
 
     <section class="news rise" style="margin-top:34px">
