@@ -449,10 +449,14 @@
 
     /* PC: 항목 표를 두 단으로 나눠 가로 공간을 채운다 */
     .facts--2col{
-      columns:2;column-gap:48px;
-      column-rule:1px solid var(--rule);   /* 두 단 사이 세로 구분선 */
+      display:grid;grid-template-columns:1fr 1fr;
+      column-gap:48px;position:relative;
     }
-    .facts--2col .facts__row{break-inside:avoid}
+    /* 두 단 사이 세로 구분선 */
+    .facts--2col::before{
+      content:"";position:absolute;top:0;bottom:0;left:50%;
+      width:1px;background:var(--rule);
+    }
 
     /* PC: 물품 후원 방법 박스를 전체 폭으로, 항목은 두 단으로 */
     .callout--wide{padding:24px 28px}
